@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9amBatchjune2020", "9amBatchjune2020\9amBatchjune2020.csproj", "{7FE69F0C-F237-44BC-A2F4-D08FDC0BBBB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoExample", "AdoExample\AdoExample.csproj", "{AD77C4B5-585F-4A7D-9418-3521ED3476AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7FE69F0C-F237-44BC-A2F4-D08FDC0BBBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FE69F0C-F237-44BC-A2F4-D08FDC0BBBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FE69F0C-F237-44BC-A2F4-D08FDC0BBBB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD77C4B5-585F-4A7D-9418-3521ED3476AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD77C4B5-585F-4A7D-9418-3521ED3476AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD77C4B5-585F-4A7D-9418-3521ED3476AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD77C4B5-585F-4A7D-9418-3521ED3476AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
