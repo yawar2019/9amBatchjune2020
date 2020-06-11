@@ -15,5 +15,68 @@ namespace AdoExample.Controllers
         {
             return View(obj.getEmployee());
         }
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Create(Employee objemp)
+        {
+            int i = obj.SaveEmployee(objemp);
+            if (i > 0)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+
+            }
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int? Id)
+        {
+            Employee objemp = obj.getEmployeeById(Id);
+            return View(objemp);
+        }
+        [HttpPost]
+        public ActionResult Edit(Employee objemp)
+        {
+            int i = obj.UpdateEmployee(objemp);
+            if (i > 0)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+
+            }
+        }
+
+        [HttpGet]
+        public ActionResult Delete(int? Id)
+        {
+            Employee objemp = obj.getEmployeeById(Id);
+            return View(objemp);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        public ActionResult DeleteConfirmed(int? Id)
+        {
+            int i = obj.DeleteEmployee(Id);
+            if (i > 0)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+
+            }
+        }
     }
 }
