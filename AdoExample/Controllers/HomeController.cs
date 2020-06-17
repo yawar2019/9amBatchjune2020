@@ -13,6 +13,7 @@ namespace AdoExample.Controllers
         Employeeinfo obj = new Employeeinfo();
         public ActionResult Index()
         {
+             
             return View(obj.getEmployee());
         }
         [HttpGet]
@@ -77,6 +78,18 @@ namespace AdoExample.Controllers
                 return View();
 
             }
+        }
+        public ActionResult HtmlHelperExample()
+        {
+            Employee obj1 = new Models.Employee();
+            obj1.EmpId = 1;
+            obj1.EmpName = "Prashant";
+            obj1.EmpSalary = 25000;
+
+            ViewBag.Employee = new SelectList(obj.getEmployee(), "EmpId", "EmpName");
+
+            return View(obj1);
+
         }
     }
 }
