@@ -97,5 +97,12 @@ namespace _9amBatchjune2020.Controllers
 
         } 
 
+        public ActionResult ValidationExample()
+        {
+            ServiceReference1.WCFServiceExampleClient obj = new ServiceReference1.WCFServiceExampleClient();
+            obj.Add(12, 15);
+            return Content(obj.Add(12, 15).ToString());
+        }
+
     }
 }

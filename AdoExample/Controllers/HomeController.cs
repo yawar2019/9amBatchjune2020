@@ -91,5 +91,12 @@ namespace AdoExample.Controllers
             return View(obj1);
 
         }
+
+        public ActionResult GetMyService()
+        {
+            ServiceReference1.MyServiceSoapClient obj = new ServiceReference1.MyServiceSoapClient();
+
+            return Content(obj.Add(2,4).ToString());
+        }
     }
 }
