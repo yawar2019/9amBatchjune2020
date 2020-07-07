@@ -24,6 +24,15 @@
     </thead>
 </table>
 
+<form>
+
+    EmpName <input type="text" name="EmpName" id="EmpName" /><br />
+    EmpSalary <input type="text" name="EmpSalary" id="EmpSalary" /><br />
+    Deptid <input type="text" name="EmpDeptId" id="EmpDeptId" /><br />
+    <p id="Save">Click me</p>
+
+</form>
+
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script>
@@ -41,4 +50,18 @@
                 }
             });
         }
+    
+
+ $('#Save').click(function () {
+     var url = "http://localhost:64418/api/EmployeeApi";
+            var EmpName = $("#EmpName").val();
+            var EmpSalary = $("#EmpSalary").val();
+            var DeptId = $("#EmpDeptId").val();
+            $.post(url, { EmpName: EmpName, EmpSalary: EmpSalary, DeptId: DeptId },
+                function (data) {
+                   
+               alert('Successfully inserted' +data);
+            });
+ })
+
     </script>

@@ -16,8 +16,11 @@ namespace webApi.Controllers
         }
         public ActionResult  GetApiData()
         {
-            
+            return View();
+        }
 
+        public ActionResult AngularExample()
+        {
             return View();
         }
     }
