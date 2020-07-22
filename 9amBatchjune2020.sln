@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BundlingExample", "Bundling
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webApi", "webApi\webApi.csproj", "{326DF1E9-9835-4133-8FBB-6837D960EA8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWcfService", "TestWcfService\TestWcfService.csproj", "{AF450FA2-7F63-406A-B450-5A88EA0ADEB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{326DF1E9-9835-4133-8FBB-6837D960EA8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{326DF1E9-9835-4133-8FBB-6837D960EA8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{326DF1E9-9835-4133-8FBB-6837D960EA8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF450FA2-7F63-406A-B450-5A88EA0ADEB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF450FA2-7F63-406A-B450-5A88EA0ADEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF450FA2-7F63-406A-B450-5A88EA0ADEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF450FA2-7F63-406A-B450-5A88EA0ADEB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
